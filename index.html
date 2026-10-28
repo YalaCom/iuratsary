@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160e10">
+  <meta name="description" content="Юрий Петрович Великолепный — необыкновенная, весёлая и совершенно неофициальная летопись русского царя. Двор, дуэли, пиры и волшебная скрижаль.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Юрий Петрович Великолепный — Летопись">
+  <meta property="og:description" content="Царь, о котором слагали легенды. А некоторые — даже были правдой.">
+  <meta property="og:image" content="./03FA58A7-E9D3-4BAB-81BA-9B48A8E281EE.png">
+  <title>Юрий Петрович Великолепный — Царская летопись</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell wrap">
+      <a class="wordmark" href="#top" aria-label="На главную, летопись Юрия Петровича">
+        <span class="wordmark-seal" aria-hidden="true">Ю<span>П</span></span>
+        <span class="wordmark-text">ДВОР ЕГО ВЕЛИЧЕСТВА <small>ЛЕТОПИСЬ ЮРИЯ ПЕТРОВИЧА</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#legend">О государе</a>
+        <a href="#chronicles">Летопись</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#decree">Царский указ</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mobileNav" aria-expanded="false" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация" hidden>
+      <a href="#legend">О государе</a><a href="#chronicles">Летопись</a><a href="#gallery">Галерея</a><a href="#decree">Царский указ</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="line"></span> ПРИДВОРНАЯ ЛЕТОПИСЬ <span class="eyebrow-dot"></span> ТОМЪ ПЕРВЫЙ</div>
+          <p class="pretitle">История великого государя</p>
+          <h1 id="heroTitle">Юрий <em>Петрович</em><span>Великолепный</span></h1>
+          <div class="hero-divider"><span class="diamond"></span><span>✦</span><span class="diamond"></span></div>
+          <p class="hero-description">Царь, чьё имя гремело на балах и в палатах. Человек большой души, отменного аппетита и редкой способности побеждать неприятелей, не отрываясь от волшебной скрижали.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#chronicles">Читать летопись <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="#gallery">Созерцать портреты <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnotes">
+            <div><strong>VII</strong><span>царских портретов</span></div>
+            <div class="footnote-rule"></div>
+            <div><strong>∞</strong><span>поводов для легенд</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-arch">
+            <div class="portrait-inner">
+              <img src="./03FA58A7-E9D3-4BAB-81BA-9B48A8E281EE.png" alt="Портрет Юрия Петровича из царской фотолетописи" fetchpriority="high">
+            </div>
+            <div class="photo-shade" aria-hidden="true"></div>
+          </div>
+          <div class="hero-corner hero-corner-tl" aria-hidden="true"></div>
+          <div class="hero-corner hero-corner-br" aria-hidden="true"></div>
+          <div class="portrait-stamp"><span>ЕГО ВЕЛИЧЕСТВО</span><b>Ю. П.</b><span>ВЕЛИКОЛЕПНЫЙ</span></div>
+          <div class="photo-caption">Портрет I <span>—</span> из собрания царских палат</div>
+        </div>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">ВЕЛИЧИЕ · ЧЕСТЬ · АППЕТИТ</div>
+      <a href="#legend" class="scroll-prompt" aria-label="Листать ниже"><span class="scroll-line"></span> ЛИСТАЙТЕ ЛЕТОПИСЬ</a>
+    </section>
+
+    <div class="royal-ticker" aria-label="Девиз царского двора">
+      <div class="wrap ticker-inner"><span>СЛАВА ГОСУДАРЮ</span><i>✦</i><span>ДА НЕ ОСКУДЕЕТ ЦАРСКИЙ СТОЛ</span><i>✦</i><span>ДА ВЫПАДЕТ ЛЕГЕНДАРНЫЙ ГЕРОЙ</span></div>
+    </div>
+
+    <section class="section legend-section" id="legend" aria-labelledby="legendTitle">
+      <div class="wrap legend-grid">
+        <div class="legend-heading reveal">
+          <span class="section-kicker">01 / О ЛИЧНОСТИ</span>
+          <h2 id="legendTitle">Государь.<br><em>Человек.</em><br>Легенда.</h2>
+          <div class="decorative-rule" aria-hidden="true"><span>✦</span></div>
+        </div>
+        <div class="legend-content reveal">
+          <p class="dropcap">В старинных летописях имя Юрия Петровича Великолепного упоминается с особенным трепетом. Не потому, что он требовал поклонов. Просто никто не знал, какой царский замысел придёт ему в голову следующим.</p>
+          <p>Он умел быть строгим на государственном совете, галантным на балу и совершенно беззащитным перед тарелкой вкусного ужина. Его верные бояре поговаривали: «Коли государь улыбается — будет праздник. Коли нахмурился — кто-то забрал последний пирожок».</p>
+          <p>Больше всего он ценил верность, остроумие и людей, которые не мешали ему совершать великие дела. А ещё — красивых женщин, богатые угощения и волшебную скрижаль, в которой открывался загадочный мир «Рэйд Шаров Легендс».</p>
+          <div class="legend-signature"><span>Из записок придворного летописца</span><strong>Ю. П. Великолепный</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapters-section" id="chronicles" aria-labelledby="chroniclesTitle">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><span class="section-kicker">02 / СЛАВНЫЕ СТРАНИЦЫ</span><h2 id="chroniclesTitle">Семь глав <em>великой</em> жизни</h2></div>
+          <p>От царского трона до волшебной скрижали: подвиги, страсти и дела, которые переживут века.</p>
+        </div>
+        <div class="chapters-list" id="chaptersList"></div>
+      </div>
+    </section>
+
+    <section class="quote-break" aria-label="Девиз государя">
+      <div class="quote-decoration" aria-hidden="true">“</div>
+      <div class="wrap quote-inner">
+        <p>«Царствовать — дело трудное. Но кто, как не я, сделает его великолепным?»</p>
+        <span>— приписывается Юрию Петровичу</span>
+      </div>
+    </section>
+
+    <section class="section pleasures-section" id="pleasures" aria-labelledby="pleasuresTitle">
+      <div class="wrap">
+        <div class="center-head reveal">
+          <span class="section-kicker">03 / ДУША ГОСУДАРЕВА</span>
+          <h2 id="pleasuresTitle">Три любви <em>одного царя</em></h2>
+          <p>Великий правитель умеет наслаждаться жизнью. У нашего государя это получалось особенно убедительно.</p>
+        </div>
+        <div class="pleasures-grid">
+          <article class="pleasure-card reveal">
+            <span class="card-index">I. СЛАБОСТЬ</span>
+            <div class="pleasure-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M16 48h48M22 48c2 13 34 13 36 0M28 58v8h24v-8M27 37c-4-7 4-9 1-16M40 37c-4-7 4-9 1-16M53 37c-4-7 4-9 1-16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Пиры <em>да яства</em></h3>
+            <p>Любил государь кушать — и не скрывал сего. Щи наваристые, мясо запечённое, пироги румяные. Чем щедрее стол, тем мудрее казались царские решения.</p>
+            <span class="card-foot">Девиз: «Сытый царь — мирное царство»</span>
+          </article>
+          <article class="pleasure-card reveal">
+            <span class="card-index">II. СЛАБОСТЬ</span>
+            <div class="pleasure-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><path d="M40 61 17 37c-13-14 9-32 23-14 14-18 36 0 23 14L40 61Z" stroke="currentColor" stroke-width="2"/><path d="M26 29c-3 1-5 5-4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Дамы <em>прекрасные</em></h3>
+            <p>Красивые женщины, изящные манеры, разговоры при свечах. На царских балах Юрий Петрович был опаснее любого дуэлянта — ибо поражал сердца одной улыбкой.</p>
+            <span class="card-foot">Девиз: «Красоте — царское почтение»</span>
+          </article>
+          <article class="pleasure-card reveal">
+            <span class="card-index">III. СЛАБОСТЬ</span>
+            <div class="pleasure-icon" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="22" y="10" width="36" height="59" rx="5" stroke="currentColor" stroke-width="2"/><path d="M29 20h22v37H29zM35 63h10M40 28l3 8 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1 3-8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+            <h3>Скрижаль <em>волшебная</em></h3>
+            <p>Ни один мудрец не мог объяснить, откуда явилась сия дивная штуковина. Но стоило запустить «Рэйд Шаров Легендс», как государственные дела откладывались до следующего призыва.</p>
+            <span class="card-foot">Девиз: «Ещё один призыв — и спать»</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="raid-section" id="tablet" aria-labelledby="raidTitle">
+      <div class="wrap raid-grid">
+        <div class="raid-visual reveal"><div class="raid-photo-frame"><img loading="lazy" decoding="async" src="./75435100-E1F9-47E3-8AAF-B19C165AC8E6.png" alt="Юрий Петрович — один из семи царских фотопортретов"></div><div class="raid-seal"><small>ТАЙНЫЙ</small><strong>АРХИВ</strong><small>ДВОРЦА</small></div></div>
+        <div class="raid-copy reveal"><span class="section-kicker">04 / ОСОБАЯ ГЛАВА</span><h2 id="raidTitle">Волшебная<br><em>скрижаль царя</em></h2><p>Бояре приносили свитки, послы ожидали аудиенции, казначей пересчитывал золото. Но Юрий Петрович иногда произносил страшные слова: «Мне только ежедневную награду забрать».</p><p>И всё царство знало — государь вновь отправился в «Рэйд Шаров Легендс». Там он собирал героев, побеждал грозных чудовищ и с царским достоинством переживал неудачные призывы.</p><blockquote>«Ежели выпадет легендарный герой — объявить праздник по всему государству!»</blockquote><span class="story-note">Секретная запись из покоев Его Величества</span></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="wrap">
+        <div class="section-head gallery-heading reveal"><div><span class="section-kicker">05 / ЦАРСКОЕ СОБРАНИЕ</span><h2 id="galleryTitle">Портретная <em>палата</em></h2></div><p>Семь подлинных файлов из царского архива. Нажмите на любой портрет, чтобы рассмотреть его во всём величии.</p></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="decree-section" id="decree" aria-labelledby="decreeTitle">
+      <div class="wrap">
+        <div class="decree-panel reveal"><div class="decree-top"><span>ИМЕНЕМ ЕГО ЦАРСКОГО ВЕЛИЧЕСТВА</span><span>УКАЗЪ № <b id="decreeNumber">001</b></span></div>
+          <div class="decree-ornament" aria-hidden="true">✦</div>
+          <span class="section-kicker">06 / ЗАБАВА ДЛЯ ПОДДАННЫХ</span>
+          <h2 id="decreeTitle">Получить <em>царский указ</em></h2>
+          <p class="decree-lead">Указ царя — закон. А если указ смешной, то ещё и повод для великого пира.</p>
+          <p class="decree-message" id="decreeMessage" aria-live="polite">Повелеваю всякому честному человеку сегодня кушать вкусно, смеяться громко и не спорить с царём.</p>
+          <div class="decree-buttons"><button type="button" class="btn btn-dark" id="decreeButton">Издать новый указ <span aria-hidden="true">✦</span></button><button type="button" class="btn btn-light" id="copyButton">Скопировать</button></div>
+          <div id="decreeFeedback" class="decree-feedback" role="status"></div>
+          <div class="decree-signature">Собственноручно повелел <strong>Юрий Петрович Великолепный</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid"><div class="footer-brand"><span class="footer-monogram">ЮП</span><div><strong>ЮРИЙ ПЕТРОВИЧ ВЕЛИКОЛЕПНЫЙ</strong><span>Летопись, которую нельзя было не написать.</span></div></div><a href="#top" class="to-top">Наверх ↑</a></div>
+    <div class="wrap footer-bottom"><span>ИСТОРИЯ ВЕЛИЧИЯ. ЮМОРА. И ХОРОШЕГО АППЕТИТА.</span><span>Художественная, шуточная летопись. Не исторический документ.</span></div>
+  </footer>
+
+  <dialog id="galleryDialog" class="gallery-dialog" aria-label="Просмотр царских портретов">
+    <div class="dialog-content"><button class="dialog-close" id="galleryClose" aria-label="Закрыть портрет" type="button">×</button><div class="dialog-image-wrap"><img id="dialogImage" alt=""></div><div class="dialog-footer"><button type="button" class="dialog-arrow" id="galleryPrev" aria-label="Предыдущий портрет">←</button><div class="dialog-meta"><span id="dialogCounter"></span><strong id="dialogTitle"></strong></div><button type="button" class="dialog-arrow" id="galleryNext" aria-label="Следующий портрет">→</button></div></div>
+  </dialog>
+  <noscript><div class="noscript-message">Для интерактивной галереи и чтения семи глав включите JavaScript. Главная страница, портрет и история царя доступны и без него.</div></noscript>
+</body>
+</html>
